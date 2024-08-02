@@ -1,125 +1,84 @@
-@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:wght@400;700&display=swap');
-
-:root {
-  --cor-de-fundo: #161618;
-  --verde: #6FFF57;
-  --branco: #FFFFFF;
-  --botao-ativo: #3A375E;
-  --botao-inativo: rgba(58, 55, 94, 0.5);
-  --texto-fundo: rgba(58, 55, 94, 0.3);
-}
-
 body {
-  background-color: var(--cor-de-fundo);
-  color: var(--branco);
-  font-family: 'Chakra Petch', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-.conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+}
+
+section#home {
+    background-color: #f9f9f9;
+}
+
+form {
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.titulo-principal {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-}
-
-.titulo-principal span {
-    color: var(--verde);
-}
-
-.botao {
-    font-family: "Crakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
-}
-
-.botao:first-child {
-    border-radius: 40px 40px 0 0;
-}
-
-.botoes {
+form label {
     display: block;
+    margin-bottom: 0.5em;
 }
 
-.botao.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}   
-
-.abas-textos{
-    background-color: var(--texto-fundo);
-    padding: 40px;
-    border-radius: 0 0 40px 40px;
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
 }
 
-.aba-conteudo.ativo{
-    display: block;
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
 }
 
-.aba-conteudo{
-    display: none;
-}
-
-.aba-conteudo-titulo-principal{
-    font-size: 28px;
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
+3. main.js
+Este é o arquivo de JavaScript. Vamos adicionar uma funcionalidade simples, como uma mensagem de alerta quando o formulário for enviado.
 
-.aba-conteudo-titulo-secundario{
-    text-align: center;
-    color: var(--verde);
-    text-transform: uppercase;
-}
+javascript
+Copiar código
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
 
-.contador{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .contador-digito{
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-  }
-  .contador-digito-numero{
-    font-size: 80px;
-    margin: 0;
-}
-
-  .contador-digito-texto{
-    color: var(--verde);
-    font-size: 20px;
-    margin: 0;
-  }
-  
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-    
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
-   
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
-    }
-}
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Evita o envio real do formulário
+        alert('Obrigado por entrar em contato! Sua mensagem foi recebida.');
+        form.reset(); // Limpa os campos do formulário
+    });
+});
