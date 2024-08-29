@@ -1,227 +1,71 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tacos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        .menu-hamburguer {
-            display: none;
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 30px;
-            cursor: pointer;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-
-        .menu-hamburguer + ul {
-            display: none;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            top: 60px;
-            right: 15px;
-            background-color: #333;
-            border-radius: 5px;
-        }
-
-        .menu-hamburguer + ul li {
-            padding: 10px;
-        }
-
-        .menu-hamburguer + ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .menu-hamburguer + ul li a:hover {
-            background-color: #575757;
-        }
-
-        .menu-cascata {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px;
-        }
-
-        .menu-cascata ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu-cascata ul li {
-            position: relative;
-            display: inline-block;
-            padding: 10px 20px;
-        }
-
-        .menu-cascata ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .menu-cascata ul li a:hover {
-            background-color: #575757;
-        }
-
-        .menu-cascata ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .menu-cascata ul li:hover ul {
-            display: block;
-        }
-
-        .menu-cascata ul li ul li {
-            padding: 10px 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        @media screen and (max-width: 768px) {
-            .menu-hamburguer {
-                display: block;
-            }
-
-            .menu-cascata {
-                display: none;
-            }
-
-            .menu-hamburguer.active + ul {
-                display: block;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
-        <h1>Tacos na Hora</h1>
-    </header>
-    <BODY background="https://media.istockphoto.com/id/1333647378/pt/foto/homemade-american-soft-shell-beef-tacos.jpg?s=612x612&w=0&k=20&c=ovzxebDqfBU5ljXAqGYRdkMiEiU1Enhxw-79ElPFgXU=">
-    <nav class="menu-hamburguer">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-
-    <nav class="menu-cascata">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a>
-                <ul>
-                    <li><a href="#">Consultoria</a></li>
-                    <li><a href="#">Treinamento</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-
-    <main>
-                     
-        <p></p>
-    </main>
-    <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio de Tacos</title>
+    <title>Delícias do Hambúrguer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-        
-
-    
-    <!-- Cardápio -->
-    <main>
-        <section class="menu">
-            <h2>Escolha aqui o seu Taco</h2>
+    <header>
+        <h1>Delícias do Hambúrguer</h1>
+        <nav>
             <ul>
-                <li>
-                    <h3>Taco de Carne</h3>
-                    <p>Carne moída temperada, alface, tomate e queijo ralado em um taco crocante.</p>
-                    <span class="preco">R$ 15,00</span>
-                </li>
-                <li>
-                    <h3>Taco de Frango</h3>
-                    <p>Frango desfiado com especiarias, cebola, pimentão e molho picante.</p>
-                    <span class="preco">R$ 17,00</span>
-                </li>
-                <li>
-                    <h3>Taco Vegetariano</h3>
-                    <p>Feijão preto, milho, pimentões grelhados e guacamole.</p>
-                    <span class="preco">R$ 14,00</span>
-                </li>
-                <li>
-                    <h3>Taco de Peixe</h3>
-                    <p>Filé de peixe empanado, repolho ralado e molho de limão.</p>
-                    <span class="preco">R$ 18,00</span>
-               
-            
-        </section>
-    </main>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="hero">
+        <img src="hamburguer1.jpg" alt="Delicioso Hambúrguer">
+        <div class="hero-text">
+            <h2>Bem-vindo ao nosso restaurante!</h2>
+            <p>Conheça nosso cardápio com as melhores opções de hambúrgueres para você.</p>
+        </div>
+    </section>
 
+    <section id="menu">
+        <h2>Nosso Cardápio</h2>
+        <div class="menu-item">
+            <h3>Cheeseburger Clássico</h3>
+            <img src="hamburguer2.jpg" alt="Cheeseburger Clássico">
+            <p>Hambúrguer suculento com queijo cheddar, alface crocante, tomate fresco e molho especial.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Bacon Burger</h3>
+            <img src="hamburguer2.jpg" alt="Bacon Burger">
+            <p>Delicioso hambúrguer com bacon crocante, queijo cheddar, cebola caramelizada e maionese temperada.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Veggie Burger</h3>
+            <img src="hamburguer2.jpg" alt="Veggie Burger">
+            <p>Hambúrguer vegetariano feito com grão-de-bico, queijo feta, espinafre e molho de iogurte.</p>
+        </div>
+        <div class="menu-item">
+            <h3>BBQ Burger</h3>
+            <img src="hamburguer2.jpg" alt="BBQ Burger">
+            <p>Hambúrguer com molho barbecue, cebola crispy, queijo gouda e picles.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Spicy Burger</h3>
+            <img src="hamburguer2.jpg" alt="Spicy Burger">
+            <p>Hambúrguer apimentado com jalapeños, queijo pepper jack e molho picante.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Deluxe Burger</h3>
+            <img src="hamburguer2.jpg" alt="Deluxe Burger">
+            <p>Hambúrguer gourmet com cogumelos salteados, queijo suíço, maionese trufada e rúcula.</p>
+        </div>
+    </section>
 
-
-    
-    <!-- Rodapé -->
-   
-
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos apaixonados por hambúrgueres e nossa missão é servir os melhores e mais saborosos hambúrgueres da cidade. Cada hambúrguer é feito com ingredientes frescos e selecionados para garantir uma experiência incrível.</p>
+    </section>
 
     <footer>
-        <p>Aluno:André Horing</p>
+        <p>&copy; 2024 Delícias do Hambúrguer. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu-hamburguer + ul');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
 </body>
 </html>
