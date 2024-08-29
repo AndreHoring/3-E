@@ -1,60 +1,238 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho - Educação Agrícola</title>
-    <link rel="stylesheet" href="style.css">
+    <title>tacos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu-hamburguer {
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .menu-hamburguer + ul {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 60px;
+            right: 15px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        .menu-hamburguer + ul li {
+            padding: 10px;
+        }
+
+        .menu-hamburguer + ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-hamburguer + ul li a:hover {
+            background-color: #575757;
+        }
+
+        .menu-cascata {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .menu-cascata ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-cascata ul li {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        .menu-cascata ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-cascata ul li a:hover {
+            background-color: #575757;
+        }
+
+        .menu-cascata ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-cascata ul li:hover ul {
+            display: block;
+        }
+
+        .menu-cascata ul li ul li {
+            padding: 10px 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-hamburguer {
+                display: block;
+            }
+
+            .menu-cascata {
+                display: none;
+            }
+
+            .menu-hamburguer.active + ul {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Agrinho!</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+        <h1>SubWay Tacos</h1>
     </header>
-    
-    <section id="home">
-        <h2>Início</h2>
-        <p>O Agrinho é a sua plataforma para aprender sobre práticas agrícolas sustentáveis.</p>
-    </section>
-
-    <section id="about">
-        <h2>Sobre</h2>
-        <p>O Agrinho oferece recursos educacionais, workshops e consultoria para agricultores interessados em práticas sustentáveis.</p>
-    </section>
-
-    <section id="services">
-        <h2>Serviços</h2>
+    <BODY background="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_1540,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_1.0,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2Fproject%2Fgmi%2Foldelpaso%2Foldelpaso-us%2Frecipes%2Fqtcu578og0gukdk_kb_rmg_gmi_hi_res_jpeg.jpeg%3F%201540w">
+    <nav class="menu-hamburguer">
         <ul>
-            <li>Consultoria em Agricultura Sustentável</li>
-            <li>Workshops e Treinamentos</li>
-            <li>Recursos Educacionais</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section id="contact">
-        <h2>Contato</h2>
-        <form id="contact-form">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <nav class="menu-cascata">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a>
+                <ul>
+                    <li><a href="#">Consultoria</a></li>
+                    <li><a href="#">Treinamento</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+                     
+        <p></p>
+    </main>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Tacos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+        
+
+    
+    <!-- Cardápio -->
+    <main>
+        <section class="menu">
+            <h2>Escolha o Seu Taco</h2>
+            <ul>
+                <li>
+                    <h3>Taco de Carne</h3>
+                    <p>Carne moída temperada, alface, tomate e queijo ralado em um taco crocante.</p>
+                    <span class="preco">R$ 15,00</span>
+                </li>
+                <li>
+                    <h3>Taco de Frango</h3>
+                    <p>Frango desfiado com especiarias, cebola, pimentão e molho picante.</p>
+                    <span class="preco">R$ 17,00</span>
+                </li>
+                <li>
+                    <h3>Taco Vegetariano</h3>
+                    <p>Feijão preto, milho, pimentões grelhados e guacamole.</p>
+                    <span class="preco">R$ 14,00</span>
+                </li>
+                <li>
+                    <h3>Taco de Peixe</h3>
+                    <p>Filé de peixe empanado, repolho ralado e molho de limão.</p>
+                    <span class="preco">R$ 18,00</span>
+                </li>
+                <li>
+                   
+                </li>
+            </li>
+            <li>
+                <li>
+                   
+                </li>
+            </li>
+            <li>
+               
+            
+        </section>
+    </main>
+
+
+
+
+    
+    <!-- Rodapé -->
+   
+
 
     <footer>
-        <p>&copy; 2024 Agrinho. Todos os direitos reservados.</p>
+        <p>Aluno:Luiz Henrique</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-hamburguer + ul');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
