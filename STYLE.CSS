@@ -1,15 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -19,66 +29,54 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
+#hero {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    margin-top: 1rem;
+}
+
 section {
-    padding: 2em;
+    padding: 2rem;
 }
 
-section#home {
-    background-color: #f9f9f9;
+section#menu {
+    background: #f9f9f9;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
+.menu-item {
+    margin-bottom: 2rem;
 }
 
-form label {
+.menu-item img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-bottom: 0.5em;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.7em 1.5em;
-    cursor: pointer;
+    margin: 0 auto 1rem;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
-    position: absolute;
+    padding: 1rem 0;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
-3. main.js
-Este é o arquivo de JavaScript. Vamos adicionar uma funcionalidade simples, como uma mensagem de alerta quando o formulário for enviado.
-
-javascript
-Copiar código
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault(); // Evita o envio real do formulário
-        alert('Obrigado por entrar em contato! Sua mensagem foi recebida.');
-        form.reset(); // Limpa os campos do formulário
-    });
-});
