@@ -3,101 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0emTvJxNUeQefOf4he6wc-fKunPUzTIzJ_Q&s Delícias do Hambúrguer </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Delícias do Hambúrguer</h1>
-        <nav>
-            <ul>
-                <li><a href="#menu">Cardápio</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <img src="hamburguer1.jpg" alt="Delicioso Hambúrguer">
-        <div class="hero-text">
-            <h2>Bem-vindo ao nosso restaurante!</h2>
-            <p>Conheça nosso cardápio com as melhores opções de hambúrgueres para você.</p>
-        </div>
-    </section>
-
-    <section id="menu">
-        <h2>Nosso Cardápio</h2>
-        <div class="menu-item">
-            <h3>Cheeseburger Clássico</h3>
-            <img src="https://s2.glbimg.com/jJirZVMNK5ZsZ9UDLKQBqPu3iXk=/620x455/e.glbimg.com/og/ed/f/original/2020/10/20/hamburgueria_bob_beef_-_dia_das_criancas_-_foto_pfz_studio__norma_lima.jpg" alt="Cheeseburger Clássico">
-            <p>Hambúrguer suculento com queijo cheddar e molho especial.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Bacon Burger</h3>
-            <img src="https://theninjacue.com/wp-content/uploads/2023/03/25-erin_hungsberg-0r4a6119-bacon-jam-burger-23-2-scaled.jpg">
-            <p>Delicioso hambúrguer com bacon crocante, queijo cheddar, cebola caramelizada alface e maionese temperada.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Veggie Burger</h3>
-            <img src="https://healthfulblondie.com/wp-content/uploads/2021/06/best-no-bean-veggie-burgers-TN.jpg" alt="Veggie Burger">
-            <p>Hambúrguer vegetariano feito com grão-de-bico, Alface, Ceola Roxa, Tomate Fresco e Molho Verde.</p>
-        </div>
-        <div class="menu-item">
-            <h3>BBQ Burger</h3>
-            <img src="https://www.viksburger.com.br/wp-content/uploads/2019/05/burger18.jpg" alt="BBQ Burger">
-            <p>Hambúrguer com molho barbecue, 2 carnes, cebola crispy, Bacon em Tiras e Queijo Chadder.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Spicy Burger</h3>
-            <img src="https://www.gardengourmet.com/sites/default/files/recipes/aeead5804e79ff6fb98b2039619c5230_200828_MEDIAMONKS_GG_Spicytarian.jpg" alt="Spicy Burger">
-            <p>Hambúrguer apimentado com jalapeños, Queijo Chadder, Alface, Tomate Cereja, Cebola Roxa e molho picante.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Deluxe Burger</h3>
-            <img src="https://www.tysonfoodservice.com/adobe/dynamicmedia/deliver/dm-aid--92a52f1f-9d97-4118-93d0-a54d82e85a68/deluxe-cheeseburger-pickles-onion-pub-burger-137353-768x522.jpg?quality=75&width=1200&preferwebp=true" alt="Deluxe Burger">
-            <p>Hambúrguer Gourmet com 2 Carnes, Queijo Prato, Maionese, Cebola, Tomate, Rúcula e Pepino Agridoce.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>Sobre Nós</h2>
-        <p>Somos apaixonados por hambúrgueres e nossa missão é servir os melhores e mais saborosos hambúrgueres da cidade. Cada hambúrguer é feito com ingredientes frescos e selecionados para garantir uma experiência incrível.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Delícias do Hambúrguer. Todos os direitos de André Horing.</p>
-    </footer>
-
-    <script src="main.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Contato</title>
+    <title>Meu Site Comercial</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
         }
         .container {
-            background-color: #fff;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background: #fff;
+            margin-bottom: 20px;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            max-width: 100%;
         }
-        h2 {
-            margin-bottom: 15px;
+        h1, h2 {
+            color: #333;
         }
         .form-group {
             margin-bottom: 15px;
@@ -106,12 +56,16 @@
             display: block;
             margin-bottom: 5px;
         }
-        .form-group input {
+        .form-group input, .form-group textarea {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
             border: 1px solid #ddd;
             border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
         }
         .form-group input[type="submit"] {
             background-color: #4CAF50;
@@ -122,24 +76,67 @@
         .form-group input[type="submit"]:hover {
             background-color: #45a049;
         }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Minha Empresa</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <h2>Contato</h2>
-        <form action="mailto:seu-email@dominio.com" method="post" enctype="text/plain">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
+        <section id="home" class="section">
+            <h2>Bem-vindo à IA</h2>
+            <p>Oferecemos os melhores produtos e serviços para atender suas necessidades. Nossa missão é fornecer soluções de alta qualidade sobre IA para nossos clientes.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Sobre Nós</h2>
+            <p>Nós somos uma empresa dedicada a oferecer serviços excepcionais e informções concretas e Reais sobre os acontecimentos do Mundo mais para os famosos. Com anos de experiência, nossa equipe está pronta para ajudar você a alcançar seus objetivos e conhecimentos .</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contato</h2>
+            <form action="mailto:seu-email@dominio.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Minha Empresa. Todos os direitos de André Horing.</p>
+    </footer>
 </body>
 </html>
+
+
+
